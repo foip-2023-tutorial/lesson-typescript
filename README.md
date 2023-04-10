@@ -14,7 +14,7 @@ cd lesson-typescript
 ```shell
 cd lesson-1
 npm i
-npm dev
+npm run dev
 ```
 ### 課題2
 以下のコマンドを実行していく
@@ -23,7 +23,7 @@ npm dev
 ```shell
 cd lesson-websocket
 npm i
-npm dev
+npm run dev
 ```
 ## ディレクトリ構成
 ```
