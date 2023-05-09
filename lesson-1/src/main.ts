@@ -7,9 +7,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `<div id="todo"></di
 // TODO: 初めに#todoの要素の中にul要素を追加してください。
 //       ul要素のidはtodo-listにしてください。
 function setupTodoList(elem: HTMLDivElement){
-  const ulElement = document.createElement("ul");
-  ulElement.setAttribute("id","todo-list");
-  elem.appendChild(ulElement);
+  
 }
 // HINT: この関数の実行後、以下のようなHTMLができればOKです。
 //      <div id="todo">
@@ -28,21 +26,7 @@ function setupTodoList(elem: HTMLDivElement){
 //       最後にinput要素とbutton要素を#todoの要素の子要素として追加してください。
 //       button要素がクリックされたら、input要素の値を取得して、addTodoList関数を呼び出してください。
 function setupTodoInput(elem: HTMLDivElement){
-  const inputElement = document.createElement("input");
-  inputElement.setAttribute("type","text");
-  const buttonElement = document.createElement("button");
-  buttonElement.innerText = "add";
-  buttonElement.addEventListener("click",(_)=>{
-    const text = inputElement.value;
-    if(!text){
-      console.log("not content")
-      return;
-    }
-    addTodoList(text);
-    inputElement.value = "";
-  })
-  elem.appendChild(inputElement);
-  elem.appendChild(buttonElement);
+  
 }
 // HINT: この関数の実行後、以下のようなHTMLができればOKです。
 //      <div id="todo">
@@ -59,16 +43,7 @@ function setupTodoInput(elem: HTMLDivElement){
 //       また、li要素の中にbutton要素を作成して、クリックイベントを追加してください。
 //       button要素がクリックされたら、#todo-listの子要素から追加されたli要素を削除してください。
 const addTodoList = (text: string)=>{
-    const list = document.querySelector<HTMLUListElement>('#todo-list')!;
-    const todo = document.createElement('li');
-    todo.textContent = text;
-    const btn = document.createElement('button');
-    btn.addEventListener("click",(_)=>{
-      list.removeChild(todo);
-    })
-    todo.appendChild(btn);
-    btn.textContent = "done";
-    list.appendChild(todo);
+  
 }
 // HINT: この関数の実行後にtodoを追加後、以下のようなHTMLができればOKです。
 //      <div id="todo">
