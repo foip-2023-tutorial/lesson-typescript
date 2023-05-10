@@ -19,6 +19,13 @@ npm run dev
 ### 課題2
 以下のコマンドを実行していく
 
+サーバの起動
+演習終了後は`ctrl-c`で開発用サーバをシャットダウンできる
+```shell
+cd chat-server
+go run main.go
+```
+
 演習終了後は`ctrl-c`で開発用サーバをシャットダウンできる
 ```shell
 cd lesson-websocket
@@ -41,6 +48,10 @@ npm run dev
 │   │   ├── typescript.svg
 │   │   └── vite-env.d.ts
 │   └── tsconfig.json
+├── chat-server
+│   ├── go.mod
+│   ├── go.sum
+│   └── main.go
 └── lesson-websocket
     ├── index.html
     ├── package.json
