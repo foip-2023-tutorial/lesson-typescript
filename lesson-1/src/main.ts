@@ -1,5 +1,3 @@
-import './style.css'
-
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `<div id="todo"></div>`
 
 // ここから下にコードを書いていきましょう。
